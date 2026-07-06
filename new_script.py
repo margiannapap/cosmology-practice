@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 import camb
 
 # Ρύθμιση παραμέτρων
-h0_val = 67.5
+h0_val = 75.0
 pars = camb.set_params(H0=h0_val, ombh2=0.022, omch2=0.122, mnu=0.06, omk=0, tau=0.06, As=2e-9, ns=0.965, lmax=3000)
 results = camb.get_results(pars)
 powers = results.get_cmb_power_spectra(pars, CMB_unit='muK')
